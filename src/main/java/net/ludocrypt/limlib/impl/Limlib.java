@@ -1,6 +1,6 @@
 package net.ludocrypt.limlib.impl;
 
-import org.quiltmc.loader.api.QuiltLoader;
+import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -47,7 +47,7 @@ public class Limlib {
 		Registry
 			.register(Registries.CHUNK_GENERATOR, new Identifier("limlib", "debug_nbt_chunk_generator"),
 				DebugNbtChunkGenerator.CODEC);
-		QuiltLoader
+		FabricLoader.getInstance()
 			.getEntrypoints(LimlibRegistrar.ENTRYPOINT_KEY, LimlibRegistrar.class)
 			.forEach(LimlibRegistrar::registerHooks);
 	}
