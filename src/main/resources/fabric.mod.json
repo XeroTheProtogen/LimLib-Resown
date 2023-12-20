@@ -16,12 +16,6 @@
 	"icon": "assets/limlib/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"net.ludocrypt.limlib.impl.Limlib"
-		],
-		"client": [
-			"net.ludocrypt.limlib.impl.LimlibClient"
-		],
 		"limlib:registrar": [
 			"net.ludocrypt.limlib.impl.debug.DebugWorld"
 		]
@@ -32,9 +26,8 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
+		"minecraft": "~1.20.4",
+		"java": ">=17"
 	},
 	"access_widener": "limlib.accesswidener",
 	"custom": {
